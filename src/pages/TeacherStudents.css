@@ -1,0 +1,157 @@
+.teacher-students {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.teacher-students h1 {
+  color: #1e3a8a;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.search-bar {
+  margin-bottom: 2rem;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.students-container {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 2rem;
+}
+
+.students-list h2 {
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+.student-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.student-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.student-card.selected {
+  border-left: 4px solid #dc2626;
+  background: #fef2f2;
+}
+
+.student-avatar {
+  font-size: 2rem;
+  background: #e0e7ff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-details {
+  flex: 1;
+}
+
+.student-details h3 {
+  color: #1e3a8a;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.student-details p {
+  color: #6b7280;
+  font-size: 0.85rem;
+  margin: 0.1rem 0;
+}
+
+.last-active {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.student-progress {
+  width: 60px;
+  height: 60px;
+}
+
+.progress-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e5e7eb;
+  position: relative;
+}
+
+.progress-circle span {
+  background: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #1e3a8a;
+}
+
+.feedback-panel {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  height: fit-content;
+}
+
+.feedback-panel h2 {
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.feedback-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  resize: vertical;
+}
+
+.send-feedback-btn {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.send-feedback-btn:hover {
+  background: #b91c1c;
+}

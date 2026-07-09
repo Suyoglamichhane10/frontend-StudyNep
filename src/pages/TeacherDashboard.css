@@ -1,0 +1,154 @@
+.teacher-dashboard {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.teacher-dashboard h1 {
+  color: #1e3a8a;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.teacher-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.stat-card h3 {
+  color: #6b7280;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+  color: #1e3a8a;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.quick-actions {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.quick-actions h2 {
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  padding: 0.75rem 1.5rem;
+  background: #1e3a8a;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.action-btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+.recent-activity {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.recent-activity h2 {
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+.activity-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.activity-item:last-child {
+  border-bottom: none;
+}
+
+.student-name {
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.activity-desc {
+  color: #374151;
+}
+
+.activity-time {
+  color: #9ca3af;
+  font-size: 0.85rem;
+}
+
+.performance-table {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.performance-table h2 {
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+.performance-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.performance-table th {
+  text-align: left;
+  padding: 0.75rem;
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.performance-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.high-score {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.medium-score {
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+.low-score {
+  color: #dc2626;
+  font-weight: 600;
+}

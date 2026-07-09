@@ -1,0 +1,63 @@
+/* DashboardLayout.css */
+
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f7fa;
+}
+
+.dashboard-content-area {
+  flex: 1;
+  padding: 2rem;
+  overflow-x: auto;
+  transition: all 0.3s ease;
+}
+
+/* When sidebar is collapsed on desktop */
+.sidebar.collapsed ~ .dashboard-content-area {
+  margin-left: 70px;
+}
+
+/* When sidebar is expanded on desktop */
+.sidebar:not(.collapsed) ~ .dashboard-content-area {
+  margin-left: 260px;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .dashboard-content-area {
+    padding: 1rem;
+    margin-left: 0 !important;
+    width: 100%;
+  }
+}
+
+/* Tablet styles */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .dashboard-content-area {
+    padding: 1.5rem;
+  }
+}
+
+/* Large screens */
+@media screen and (min-width: 1400px) {
+  .dashboard-content-area {
+    padding: 2.5rem;
+  }
+}
+
+/* Content fade in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dashboard-content-area > * {
+  animation: fadeInUp 0.4s ease;
+}

@@ -1,0 +1,63 @@
+.admin-reports {
+  padding: 2rem;
+}
+
+.admin-reports h1 {
+  color: #1e3a8a;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.reports-section {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.reports-section h2 {
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+.stats-mini {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.stat-mini-card {
+  background: #f9fafb;
+  padding: 1rem;
+  border-radius: 8px;
+  min-width: 100px;
+  text-align: center;
+}
+.stat-mini-card h3 {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+.stat-mini-card p {
+  color: #1e3a8a;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.recent-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.recent-table th {
+  text-align: left;
+  padding: 0.75rem;
+  
+  background: #f3f4f6;
+  color: #374151;
+}
+.recent-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+}

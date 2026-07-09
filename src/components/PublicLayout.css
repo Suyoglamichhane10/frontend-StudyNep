@@ -1,0 +1,49 @@
+/* ========================================
+   PUBLIC LAYOUT - FULLY RESPONSIVE
+   ======================================== */
+
+.public-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.public-layout main {
+  flex: 1;
+}
+
+/* Optional: Add smooth scrolling for better UX */
+.public-layout {
+  scroll-behavior: smooth;
+}
+
+/* Ensure content doesn't overflow on mobile */
+.public-layout main {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+
+/* Tablet and Mobile */
+@media (max-width: 768px) {
+  .public-layout main {
+    overflow-x: hidden;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .public-layout main {
+    overflow-x: hidden;
+  }
+}
+
+/* ===== DARK MODE SUPPORT ===== */
+.dark-mode .public-layout {
+  background: var(--bg-primary);
+}
+
+.dark-mode .public-layout main {
+  background: var(--bg-primary);
+}

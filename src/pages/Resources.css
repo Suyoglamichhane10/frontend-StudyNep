@@ -1,0 +1,531 @@
+/* ========================================
+   RESOURCES PAGE - FULLY RESPONSIVE CSS
+   (JSX remains unchanged)
+   ======================================== */
+
+.resources-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+/* Header */
+.resources-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.resources-header h1 {
+  font-size: 3rem;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  position: relative;
+  display: inline-block;
+}
+
+.resources-header h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #1e3a8a, #dc2626);
+  border-radius: 2px;
+}
+
+.subtitle {
+  color: #475569;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 1.5rem auto 0;
+  line-height: 1.6;
+}
+
+/* Tabs */
+.resources-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 0.8rem 2.2rem;
+  border: none;
+  border-radius: 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: white;
+  color: #475569;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.tab:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-color: #1e3a8a;
+}
+
+.tab.active {
+  background: #1e3a8a;
+  color: white;
+  border-color: #1e3a8a;
+  box-shadow: 0 8px 16px rgba(30, 58, 138, 0.3);
+}
+
+/* Section Titles */
+.category-section {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #1e293b;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.title-underline {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.title-underline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #dc2626, #facc15);
+  border-radius: 2px;
+}
+
+/* Subject Grid for +2 */
+.subject-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.subject-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #eef2f6;
+  display: flex;
+  flex-direction: column;
+}
+
+.subject-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border-color: #1e3a8a;
+}
+
+.subject-card h3 {
+  color: #1e3a8a;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 0.8rem;
+}
+
+.resource-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: auto;
+}
+
+.resource-link {
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  text-align: left;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid transparent;
+}
+
+.link-icon {
+  font-size: 1.2rem;
+}
+
+.resource-link.notes {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+.resource-link.questions {
+  background: #fef3c7;
+  color: #92400e;
+}
+.resource-link.materials {
+  background: #e0e7ff;
+  color: #1e3a8a;
+}
+
+.resource-link:hover {
+  filter: brightness(0.97);
+  transform: translateX(5px);
+  border-color: currentColor;
+}
+
+/* Semester Grid for Bachelor */
+.semester-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.semester-card {
+  background: white;
+  padding: 1.8rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #eef2f6;
+}
+
+.semester-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #dc2626;
+}
+
+.semester-card h3 {
+  color: #1e3a8a;
+  margin-bottom: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 0.8rem;
+}
+
+.subject-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.subject-list li {
+  margin-bottom: 0.7rem;
+}
+
+.subject-list a {
+  color: #475569;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.subject-list a:hover {
+  color: #dc2626;
+  background: #f1f5f9;
+  padding-left: 1.2rem;
+}
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+  .resources-page {
+    padding: 1.5rem;
+  }
+  
+  .resources-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .tab {
+    padding: 0.7rem 1.8rem;
+    font-size: 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .subject-card h3 {
+    font-size: 1.3rem;
+  }
+  
+  .semester-card h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile (up to 768px) */
+@media (max-width: 768px) {
+  .resources-page {
+    padding: 1rem;
+  }
+  
+  .resources-header {
+    margin-bottom: 2rem;
+  }
+  
+  .resources-header h1 {
+    font-size: 2rem;
+  }
+  
+  .resources-header h1::after {
+    width: 60px;
+    height: 3px;
+    bottom: -8px;
+  }
+  
+  .subtitle {
+    font-size: 0.95rem;
+    margin: 1rem auto 0;
+  }
+  
+  .resources-tabs {
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .tab {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+  .category-section {
+    margin-bottom: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .title-underline {
+    padding-bottom: 0.3rem;
+  }
+  
+  .subject-grid {
+    gap: 1.5rem;
+  }
+  
+  .subject-card {
+    padding: 1.5rem;
+  }
+  
+  .subject-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .resource-link {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  
+  .link-icon {
+    font-size: 1rem;
+  }
+  
+  .semester-grid {
+    gap: 1.5rem;
+  }
+  
+  .semester-card {
+    padding: 1.5rem;
+  }
+  
+  .semester-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .subject-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .subject-list a {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Small Mobile (up to 480px) */
+@media (max-width: 480px) {
+  .resources-page {
+    padding: 0.8rem;
+  }
+  
+  .resources-header h1 {
+    font-size: 1.6rem;
+  }
+  
+  .subtitle {
+    font-size: 0.85rem;
+  }
+  
+  .resources-tabs {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+  
+  .tab {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .section-title {
+    font-size: 1.3rem;
+  }
+  
+  .subject-card {
+    padding: 1rem;
+  }
+  
+  .subject-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .resource-link {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.85rem;
+  }
+  
+  .semester-card {
+    padding: 1rem;
+  }
+  
+  .semester-card h3 {
+    font-size: 1rem;
+  }
+  
+  .subject-list a {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Extra Small Mobile (up to 360px) */
+@media (max-width: 360px) {
+  .resources-header h1 {
+    font-size: 1.4rem;
+  }
+  
+  .subtitle {
+    font-size: 0.8rem;
+  }
+  
+  .section-title {
+    font-size: 1.2rem;
+  }
+  
+  .subject-card h3 {
+    font-size: 1rem;
+  }
+  
+  .resource-link {
+    font-size: 0.8rem;
+  }
+  
+  .semester-card h3 {
+    font-size: 0.95rem;
+  }
+  
+  .subject-list a {
+    font-size: 0.75rem;
+  }
+}
+
+/* ===== DARK MODE SUPPORT ===== */
+.dark-mode .resources-page {
+  background-color: var(--bg-primary);
+}
+
+.dark-mode .resources-header h1 {
+  color: #60a5fa;
+}
+
+.dark-mode .subtitle {
+  color: var(--text-secondary);
+}
+
+.dark-mode .tab {
+  background: var(--card-bg);
+  color: var(--text-secondary);
+  border-color: var(--border-color);
+}
+
+.dark-mode .tab:hover {
+  border-color: #60a5fa;
+}
+
+.dark-mode .tab.active {
+  background: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+.dark-mode .section-title {
+  color: var(--text-primary);
+}
+
+.dark-mode .subject-card,
+.dark-mode .semester-card {
+  background: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+.dark-mode .subject-card h3,
+.dark-mode .semester-card h3 {
+  color: #60a5fa;
+  border-bottom-color: var(--border-color);
+}
+
+.dark-mode .resource-link.notes {
+  background: rgba(59, 130, 246, 0.2);
+  color: #60a5fa;
+}
+
+.dark-mode .resource-link.questions {
+  background: rgba(245, 158, 11, 0.2);
+  color: #fbbf24;
+}
+
+.dark-mode .resource-link.materials {
+  background: rgba(139, 92, 246, 0.2);
+  color: #a78bfa;
+}
+
+.dark-mode .subject-list a {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+}
+
+.dark-mode .subject-list a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #60a5fa;
+}
