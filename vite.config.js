@@ -4,14 +4,13 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   resolve: {
-    extensions: ['.jsx', '.js', '.tsx', '.ts', '.json'],
-    // This helps Vite prefer .jsx over .css
-    mainFields: ['module', 'main'],
+    extensions: ['.jsx', '.js', '.json'],  // .jsx first!
+    // This tells Vite to look for .jsx files first
   },
-  css: {
-    modules: {
-      // If using CSS modules
-      localsConvention: 'camelCase',
+  server: {
+    // Force Vite to be case-sensitive (helps catch issues early)
+    fs: {
+      strict: true,
     },
   },
 })

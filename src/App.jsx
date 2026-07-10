@@ -10,7 +10,7 @@ import Dashboard from './pages/Dashboard';
 import Studyplanner from './pages/Studyplanner';
 import Schedule from './pages/Schedule';
 import Progress from './pages/Progress';
-// import FocusTimer from "./pages/FocusTimer";
+import FocusTimer from "./pages/FocusTimer";
 import Flashcards from './pages/Flashcards';
 import Quiz from './pages/Quize';
 import TakeQuiz from './pages/TakeQuiz';
@@ -83,14 +83,9 @@ function App() {
             <DashboardLayout><StudentAssignments /></DashboardLayout>
           </ProtectedRoute>
         } />
-        {/* <Route path="/focus" element={
+        <Route path="/focus" element={
           <ProtectedRoute>
             <DashboardLayout><FocusTimer /></DashboardLayout>
-          </ProtectedRoute>
-        } /> */}
-        <Route path="/flashcards" element={
-          <ProtectedRoute>
-            <DashboardLayout><Flashcards /></DashboardLayout>
           </ProtectedRoute>
         } />
         <Route path="/quiz" element={
