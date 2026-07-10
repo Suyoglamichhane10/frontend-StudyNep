@@ -2,34 +2,34 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import PublicLayout from './components/PublicLayout';
 import DashboardLayout from './components/DashboardLayout';
 import ProtectedRoute from './components/ProtectedRoute';
-import Home from './pages/Home';
-import Login from './pages/Login';
-import Register from './pages/Register';
-import Resources from './pages/Resources';
-import Dashboard from './pages/Dashboard';
-import Studyplanner from './pages/Studyplanner';
-import Schedule from './pages/Schedule';
-import Progress from './pages/Progress';
-import FocusTimer from "./pages/FocusTimer";
-import Flashcards from './pages/Flashcards';
-import Quiz from './pages/Quize';
-import TakeQuiz from './pages/TakeQuiz';
-import CreateQuiz from './pages/CreateQuiz';
-import TeacherQuizzes from './pages/TeacherQuizzes';
-import TeacherDashboard from './pages/TeacherDashboard';
-import TeacherMaterials from './pages/TeacherMaterials';
-import TeacherStudents from './pages/TeacherStudents';
-import TeacherAssignments from './pages/TeacherAssignments';
-import AdminDashboard from './pages/AdminDashboard';
-import AdminUsers from './pages/AdminUsers';
-import AdminReports from './pages/AdminReports';
-import Portfolio from './pages/Portfolio';
-import About from './pages/About';
-import FAQ from './pages/FAQ';
-import Contact from './pages/Contact';
-import StudentMaterials from './pages/StudentMaterials';
-import StudentAssignments from './pages/StudentAssignments';
-import UserProfilePage from './pages/Userprofile';
+import Home from './pages/Home.jsx';  // Added .jsx
+import Login from './pages/Login.jsx';  // Added .jsx
+import Register from './pages/Register.jsx';  // Added .jsx
+import Resources from './pages/Resources.jsx';  // Added .jsx
+import Dashboard from './pages/Dashboard.jsx';  // Added .jsx
+import Studyplanner from './pages/Studyplanner.jsx';  // Added .jsx
+import Schedule from './pages/Schedule.jsx';  // Added .jsx
+import Progress from './pages/Progress.jsx';  // Added .jsx
+import FocusTimer from "./pages/FocusTimer.jsx";  // Already has .jsx
+import Flashcards from './pages/Flashcards.jsx';  // Added .jsx
+import Quiz from './pages/Quize.jsx';  // Added .jsx
+import TakeQuiz from './pages/TakeQuiz.jsx';  // Added .jsx
+import CreateQuiz from './pages/CreateQuiz.jsx';  // Added .jsx
+import TeacherQuizzes from './pages/TeacherQuizzes.jsx';  // Added .jsx
+import TeacherDashboard from './pages/TeacherDashboard.jsx';  // Added .jsx
+import TeacherMaterials from './pages/TeacherMaterials.jsx';  // Added .jsx
+import TeacherStudents from './pages/TeacherStudents.jsx';  // Added .jsx
+import TeacherAssignments from './pages/TeacherAssignments.jsx';  // Added .jsx
+import AdminDashboard from './pages/AdminDashboard.jsx';  // Added .jsx
+import AdminUsers from './pages/AdminUsers.jsx';  // Added .jsx
+import AdminReports from './pages/AdminReports.jsx';  // Added .jsx
+import Portfolio from './pages/Portfolio.jsx';  // Added .jsx
+import About from './pages/About.jsx';  // Added .jsx
+import FAQ from './pages/FAQ.jsx';  // Added .jsx
+import Contact from './pages/Contact.jsx';  // Added .jsx
+import StudentMaterials from './pages/StudentMaterials.jsx';  // Added .jsx
+import StudentAssignments from './pages/StudentAssignments.jsx';  // Added .jsx
+import UserProfilePage from './pages/Userprofile.jsx';  // Added .jsx
 
 function App() {
   return (
