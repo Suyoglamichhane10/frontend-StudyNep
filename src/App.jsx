@@ -11,7 +11,6 @@ import Studyplanner from './pages/Studyplanner';
 import Schedule from './pages/Schedule';
 import Progress from './pages/Progress';
 import FocusTimers from "./pages/FocusTimers";
-import Flashcards from './pages/Flashcards';
 import Quiz from './pages/Quize';
 import TakeQuiz from './pages/TakeQuiz';
 import CreateQuiz from './pages/CreateQuiz';

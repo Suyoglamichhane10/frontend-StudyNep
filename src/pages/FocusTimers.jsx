@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import './FocusTimer.css';
+import './FocusTimers.css';
 
 const  FocusTimers  =  () => {
   const [mode, setMode] = useState('focus');
