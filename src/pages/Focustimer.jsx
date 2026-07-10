@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import './FocusTimer.css';
 
-function FocusTimer() {
+const  FocusTimer  =  () => {
   const [mode, setMode] = useState('focus');
   const [isActive, setIsActive] = useState(false);
   const [timeLeft, setTimeLeft] = useState(25 * 60);
