@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import './FocusTimer.css';
 
-const  FocusTimer  =  () => {
+const  FocusTimers  =  () => {
   const [mode, setMode] = useState('focus');
   const [isActive, setIsActive] = useState(false);
   const [timeLeft, setTimeLeft] = useState(25 * 60);
@@ -234,4 +234,4 @@ const  FocusTimer  =  () => {
   );
 }
 
-export default FocusTimer;
+export default FocusTimers;
