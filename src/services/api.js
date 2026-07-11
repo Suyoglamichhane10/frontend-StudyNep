@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+
 const API = axios.create({
   baseURL: 'https://studynep.onrender.com/api',
 });
