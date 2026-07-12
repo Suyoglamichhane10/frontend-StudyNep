@@ -29,6 +29,8 @@ import Contact from './pages/Contact';
 import StudentMaterials from './pages/StudentMaterials';
 import StudentAssignments from './pages/StudentAssignments';
 import UserProfilePage from './pages/Userprofile';
+import ForgotPassword from './pages/ForgotPassword';
+import ResetPassword from './pages/ResetPassword';
 
 
 function App() {
@@ -38,6 +40,8 @@ function App() {
         {/* Public Routes */}
         <Route path="/" element={<PublicLayout><Home /></PublicLayout>} />
         <Route path="/login" element={<PublicLayout><Login /></PublicLayout>} />
+        <Route path="/forgot-password" element={<PublicLayout><ForgotPassword /></PublicLayout>} />
+        <Route path="/reset-password/:token" element={<PublicLayout><ResetPassword /></PublicLayout>} />
         <Route path="/register" element={<PublicLayout><Register /></PublicLayout>} />
         <Route path="/resources" element={<PublicLayout><Resources /></PublicLayout>} />
         <Route path="/about" element={<PublicLayout><About /></PublicLayout>} />

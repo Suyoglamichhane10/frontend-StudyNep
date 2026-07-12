@@ -3,6 +3,7 @@ import { FaArrowLeft, FaArrowRight, FaPlus, FaTrash } from 'react-icons/fa';
 import { getFlashcards, createFlashcard, deleteFlashcard, updateFlashcard } from "../services/flashcardServices" ;
 import './Flashcards.css';
 
+
 function Flashcards() {
   const [flashcards, setFlashcards] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
